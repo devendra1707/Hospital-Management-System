@@ -1,0 +1,10 @@
+Bundle-Name: enquiry-api
+Bundle-SymbolicName: com.liferay.hms.enquiry.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.hms.enquiry.exception,\
+	com.liferay.hms.enquiry.model,\
+	com.liferay.hms.enquiry.service,\
+	com.liferay.hms.enquiry.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../enquiry-service/service.xml

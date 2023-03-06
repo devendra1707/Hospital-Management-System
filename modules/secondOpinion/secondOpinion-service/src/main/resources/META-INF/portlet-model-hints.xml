@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.hms.second.opinion.model.SecondOpinion">
+		<field name="uuid" type="String" />
+		<field name="id" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="name" type="String" />
+		<field name="email" type="String" />
+		<field name="mobile" type="String" />
+		<field name="specialty" type="String" />
+		<field name="remark" type="String">
+			<hint name="max-length">2036</hint>
+		</field>
+	</model>
+</model-hints>

@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:enquiry:enquiry-api")
+//pileOnly project(":modules:appointment:appointment-api")
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../enquiry-api/src/main/java"
+}
+
+group = "com.liferay.hms.enquiry"

@@ -1,0 +1,4 @@
+Bundle-Name: secondOpinion-web
+Bundle-SymbolicName: com.liferay.hms.second.opinion.web
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.hms.second.opinion.web.constants

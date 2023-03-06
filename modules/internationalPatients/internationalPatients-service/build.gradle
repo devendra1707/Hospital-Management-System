@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:internationalPatients:internationalPatients-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../internationalPatients-api/src/main/java"
+}
+
+group = "com.liferay.hms.internationalpatients"

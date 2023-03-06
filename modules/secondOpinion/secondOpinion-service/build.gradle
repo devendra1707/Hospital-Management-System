@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:secondOpinion:secondOpinion-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../secondOpinion-api/src/main/java"
+}
+
+group = "com.liferay.hms.second.opinion"

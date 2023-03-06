@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.liferay.hms.appointment">
+	<author>devendra</author>
+	<namespace>hms</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Appointment" remote-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="appointmentId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		
+		<!-- Other fields -->
+
+		<column name="name" type="String" />
+		<column name="mobile" type="String" />
+		<column name="email" type="String" />
+		<column name="country" type="String" />
+		<column name="age" type="String" />
+		<column name="speciality" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="name" />
+		</order>
+
+		<!-- Finder methods -->
+		
+		<!-- Find By Name -->
+
+		<finder name="Name" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+		
+		<!-- Find By Email -->
+<!-- 
+		<finder name="Email" return-type="Collection">
+			<finder-column name="email" />
+		</finder>
+		
+ -->		
+ 		<!-- Find By Country -->
+
+		<finder name="Country" return-type="Collection">
+			<finder-column name="country" />
+		</finder>
+		
+		<!-- Find By Age -->
+
+		<finder name="Age" return-type="Collection">
+			<finder-column name="age" />
+		</finder>
+		
+		<!-- Find By NameEmailCountryAge -->
+
+<!-- 	<finder name="NameEmailCountryAge" return-type="Collection">
+			<finder-column name="name" />
+			<finder-column name="email" />
+			<finder-column name="country" />
+			<finder-column name="age" />
+		</finder>
+-->
+	
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>

@@ -1,0 +1,10 @@
+Bundle-Name: appointment-api
+Bundle-SymbolicName: com.liferay.hms.appointment.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.hms.appointment.exception,\
+	com.liferay.hms.appointment.model,\
+	com.liferay.hms.appointment.service,\
+	com.liferay.hms.appointment.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../appointment-service/service.xml

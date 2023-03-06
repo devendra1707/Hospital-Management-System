@@ -1,0 +1,10 @@
+Bundle-Name: internationalPatients-api
+Bundle-SymbolicName: com.liferay.hms.internationalpatients.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.hms.internationalpatients.exception,\
+	com.liferay.hms.internationalpatients.model,\
+	com.liferay.hms.internationalpatients.service,\
+	com.liferay.hms.internationalpatients.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../internationalPatients-service/service.xml

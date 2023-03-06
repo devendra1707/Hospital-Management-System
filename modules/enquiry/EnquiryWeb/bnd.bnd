@@ -1,0 +1,4 @@
+Bundle-Name: EnquiryWeb
+Bundle-SymbolicName: com.liferay.hms.enquiry.web
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.hms.enquiry.web.constants

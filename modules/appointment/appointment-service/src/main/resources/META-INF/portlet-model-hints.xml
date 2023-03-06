@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.hms.appointment.model.Appointment">
+		<field name="uuid" type="String" />
+		<field name="appointmentId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="name" type="String" />
+		<field name="mobile" type="String" />
+		<field name="email" type="String" />
+		<field name="country" type="String" />
+		<field name="age" type="String" />
+		<field name="speciality" type="String" />
+	</model>
+</model-hints>

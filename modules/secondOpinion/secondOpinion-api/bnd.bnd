@@ -1,0 +1,10 @@
+Bundle-Name: secondOpinion-api
+Bundle-SymbolicName: com.liferay.hms.second.opinion.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.hms.second.opinion.exception,\
+	com.liferay.hms.second.opinion.model,\
+	com.liferay.hms.second.opinion.service,\
+	com.liferay.hms.second.opinion.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../secondOpinion-service/service.xml

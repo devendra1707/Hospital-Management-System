@@ -1,0 +1,4 @@
+Bundle-Name: internationalPatients-web
+Bundle-SymbolicName: com.liferay.hms.internationalpatients.web
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.hms.internationalpatients.web.constants

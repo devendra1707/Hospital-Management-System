@@ -1,0 +1,4 @@
+Bundle-Name: appointment-web
+Bundle-SymbolicName: com.liferay.hms.appointment.web
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.hms.appointment.web.constants
